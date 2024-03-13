@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Blogy - Hey, we’re Blogy. See our thoughts, stories and ideas.</title>
+
+    <!-- 
+    - favicon
+  -->
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header section" data-header>
+        <div class="container">
+
+            <a href="#" class="logo">
+                <img src="" width="129" height="40" alt="Blogy logo">
+            </a>
+
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link hover:underline" data-nav-link>Home</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#recent" class="navbar-link hover:underline" data-nav-link>Recent Post</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="wrapper">
+                <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+                    <span class="span one"></span>
+                    <span class="span two"></span>
+                    <span class="span three"></span>
+                </button>
+
+                <a href="#" class="btn">Become a Collaborator</a>
+
+            </div>
+
+        </div>
+    </header>
+    <div class="overlay" data-overlay data-search-toggler></div>
+    <main>
+        <article>
+
+            <!-- 
+        - #HERO
+      -->
+            <section class="section hero" aria-label="home">
+                <div class="video-container">
+                    <video autoplay muted loop id="myVideo">
+                        <source src="backgroundVideo.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+                <div class="container">
+                    <h1 class="h1 hero-title">
+                        <strong class="strong">Welcome to ABC</strong>
+                    </h1>
+                    <h3 class="h3 hero-title-question" style="font-weight: 300;" align="center">
+                        What will you like to explore today?
+                    </h3>
+
+                </div>
+                <div class="button-container">
+                    <a href="#blogs" class="navbar-link  btn">Blogs</a>
+                    <a href="#news" class="navbar-link  btn">News</a>
+                    <a href="#posts" class="navbar-link btn">Posts</a>
+                </div>
+            </section>
+            <!-- 
+        - #FEATURED POST
+      -->
+            <section class="section featured" aria-label="featured post">
+                <div class="container">
+
+                    <h1 class="section-subtitle">
+                        Get started with our <strong class="strong">best stories</strong>
+                    </h1>
+
+                    <ul class="has-scrollbar" id="has-scrollbar-id">
+                    </ul>
+
+                </div>
+            </section>
+            <!-- 
+        - #RECENT POST
+      -->
+            <section class="section recent" id="blogs" aria-label="recent post">
+                <div class="container">
+
+                    <div class="title-wrapper">
+
+                        <h2 class="h2 section-title">
+                            <strong class="strong">Blogs</strong>
+                        </h2>
+
+                    </div>
+
+                    <ul class="grid-list" id="grid-list-id">
+                    </ul>
+                    <div class="btn-container">
+                        <button class="btn news-btn">Load more</button>
+                    </div>
+                </div>
+            </section>
+            <!-- #News -->
+            <section class="section recent" id="news" aria-label="recent post">
+                <div class="container">
+
+                    <div class="title-wrapper">
+
+                        <h2 class="h2 section-title">
+                            <strong class="strong">News</strong>
+                        </h2>
+
+                    </div>
+
+                    <ul class="grid-list" id="news-grid-list">
+                    </ul>
+                    <div class="btn-container">
+                        <a href="news.html" target="_blank">
+                            <button class="btn news-btn">Load more</button>
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+            <!-- #RECOMMENDED POST -->
+
+            <section class="section recommended" aria-label="recommended post">
+                <div class="container">
+
+                    <p class="section-subtitle">
+                        <strong class="strong">Recommended</strong>
+                    </p>
+
+                    <ul class="grid-list" id="recommendedID">
+
+
+                    </ul>
+
+                </div>
+            </section>
+
+            <!-- #Posts -->
+            <section class="section recent" id="posts" aria-label="recent post">
+
+                <div class="title-wrapper">
+
+                    <h2 class="h2 section-title">
+                        <strong class="strong" style="margin-bottom: 20px;">Posts</strong>
+                    </h2>
+
+                </div>
+
+                <div class="post-container" id="post-container">
+                </div>
+                <div class="btn-container">
+                    <a href="./images.html" target="_blank">
+                        <button class="btn news-btn">Load more</button>
+                    </a>
+                </div>
+            </section>
+
+        </article>
+    </main>
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-top section">
+
+                <div class="footer-brand">
+
+                    <a href="#" class="logo">
+                        <!-- <img src="./assets/images/logo.svg" width="129" height="40" alt="Blogy logo"> -->
+                    </a>
+
+                    <p class="footer-text">
+                        A minimal, functional theme for running a paid-membership publication on Ghost.
+                    </p>
+
+                </div>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="h5">Social</p>
+                    </li>
+
+                    <li class="footer-list-item">
+                        <ion-icon name="logo-facebook"></ion-icon>
+
+                        <a href="#" class="footer-link hover:underline">Facebook</a>
+                    </li>
+
+                    <li class="footer-list-item">
+                        <ion-icon name="logo-twitter"></ion-icon>
+
+                        <a href="#" class="footer-link hover:underline">Twitter</a>
+                    </li>
+
+                    <li class="footer-list-item">
+                        <ion-icon name="logo-pinterest"></ion-icon>
+
+                        <a href="#" class="footer-link hover:underline">Pinterest</a>
+                    </li>
+
+                    <li class="footer-list-item">
+                        <ion-icon name="logo-vimeo"></ion-icon>
+
+                        <a href="#" class="footer-link hover:underline">Vimeo</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="h5">About</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link hover:underline">Style Guide</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link hover:underline">Features</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link hover:underline">Contact</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link hover:underline">404</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link hover:underline">Privacy Policy</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="h5">Features</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link hover:underline">Upcoming Events</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link hover:underline">Blog & News</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link hover:underline">Features</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link hover:underline">FAQ Question</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link hover:underline">Testimonial</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="h5">Membership</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link hover:underline">Account</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link hover:underline">Membership</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link hover:underline">Subscribe</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link hover:underline">Tags</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link hover:underline">Authors</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="section footer-bottom">
+
+                <p class="copyright">
+                    &copy; Blogy 2022. Published by <a href="#"
+                        class="copyright-link hover:underline">codewithsadee</a>.
+                </p>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./script2.js" defer></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
