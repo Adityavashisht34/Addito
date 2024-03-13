@@ -1,0 +1,186 @@
+.container {
+    position: absolute;
+    top: 6rem;
+    max-width: 99%;
+    columns: 5;
+    column-gap: 8px;
+    overflow-x: hidden;
+}
+header{
+    position: fixed;
+    background-color: white;
+    z-index: 999;
+    width: 100%;
+    margin-top: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header span{
+    font-size: 5rem;
+}
+.container .box {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    border-radius: 12px;
+    margin-bottom: 5px;
+}
+
+.container .box:hover {
+    opacity: 0.8;
+    transition: ease-in-out;
+    transition-duration: 0.2s;
+}
+
+.container .box:hover .button-container {
+    opacity: 1;
+    transition: ease-in-out;
+    transition-duration: 0.4s;
+}
+
+.container .box img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.container .box {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    border-radius: 12px;
+    margin-bottom: 5px;
+}
+
+.box .button-container {
+    position: absolute;
+    z-index: 1;
+    top: 1rem;
+    left: 0.5rem;
+    border-radius: 15px;
+    width: 7rem;
+    height: 3rem;
+    background-color: red;
+    opacity: 0;
+}
+
+.box .button-container span {
+    color: white;
+    position: absolute;
+    left: 1rem;
+    top: 0.5rem;
+    font-size: 20px;
+    font-weight: bold;
+}
+.comment-section-container {
+    padding: 10px;
+    width: 95%;
+    height: 80%;
+    overflow-y: scroll;
+    border-radius: 12px;
+}
+
+.comment {
+    margin-top: 10%;
+}
+.comment-main-container {
+    background-color: rgb(236, 236, 236);
+    width: 800px;
+    height: 90vh;
+    position: fixed;
+    top: 5rem;
+    display: none;
+    border-radius: 12px;
+}
+
+.left-side {
+    width: 48%;
+    height: 90%;
+    position: absolute;
+    top: 3rem;
+    left: 2rem;
+    border-radius: 12px;
+}
+
+.left-side img {
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    object-fit: contain;
+}
+
+.right-side {
+    width: 42%;
+    height: 90%;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+@media (max-width:1042px) {
+    .container {
+        max-width: 99%;
+        columns: 4;
+    }
+
+    .search-bar button {
+        left: 18rem;
+    }
+}
+
+@media(max-width:860px) {
+    .search-bar button {
+        margin-left: 8rem;
+    }
+}
+
+@media (max-width:550px) {
+    .search-bar {
+        display: none;
+    }
+
+    .site-name {
+        margin-left: 9rem;
+    }
+
+    .container {
+        columns: 3;
+    }
+}
+
+@media (max-width:495px) {
+    .site-name {
+        margin-left: 7rem;
+    }
+}
+
+@media (max-width:445px) {
+    .site-name {
+        margin-left: 5.5rem;
+    }
+}
+
+@media (max-width:384px) {
+    .site-name {
+        margin-left: 3.7rem;
+    }
+
+    .container {
+        columns: 2;
+    }
+}
+
+@media (max-width:337px) {
+    .site-name {
+        margin-left: 2.2rem;
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
